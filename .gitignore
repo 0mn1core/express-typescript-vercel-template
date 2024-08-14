@@ -1,0 +1,10 @@
+# Compiled Output
+api
+
+# Dependency Directories
+node_modules/
+
+# dotenv Environment Variable Files
+.env
+.env.*
+!.env.template
