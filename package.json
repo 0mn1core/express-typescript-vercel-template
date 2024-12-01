@@ -8,10 +8,10 @@
     "url": "git+https://github.com/0mn1core/express-typescript-vercel-template.git"
   },
   "license": "MIT",
-  "main": "src/api/index.ts",
+  "main": "typescript-src/api/index.ts",
   "scripts": {
-    "dev": "tsx watch --clear-screen=false src/index.ts",
-    "build": "tsup",
+    "dev": "tsx watch --clear-screen=false typescript-src/api/index.ts",
+    "build": "shx rm -rf ./api ./src && tsup && shx mv dist/* . && shx rm -rf ./dist",
     "start": "node api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,9 +32,9 @@
   },
   "tsup": {
     "entry": [
-      "src"
+      "typescript-src"
     ],
-    "outDir": "api",
+    "outDir": "dist",
     "splitting": false,
     "sourcemap": false,
     "clean": true

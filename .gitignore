@@ -1,5 +1,7 @@
 # Compiled Output
-api
+/dist
+/api
+/src
 
 # Dependency Directories
 node_modules/

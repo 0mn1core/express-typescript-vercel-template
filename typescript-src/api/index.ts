@@ -1,7 +1,7 @@
 // Configure environment
-import './common/utils/loadEnv';
+import '../src/common/utils/loadEnv';
 
-import { app } from "./server";
+import { app } from "../src/server";
 
 // Start Express server
 const server = app.listen(process.env.PORT, () => {

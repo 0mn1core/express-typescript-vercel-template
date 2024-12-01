@@ -8,7 +8,7 @@
     "moduleResolution": "Node",                          /* Specify how TypeScript looks up a file from a given module specifier. */
     "baseUrl": ".",                                      /* Specify the base directory to resolve non-relative module names. */
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["typescript-src/*"]
     },                                                   /* Specify a set of entries that re-map imports to additional lookup locations. */
 
     /* Emit */
@@ -26,6 +26,6 @@
     /* Completeness */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*"],
+  "include": ["typescript-src/**/*"],
   "exclude": ["node_modules"]
 }

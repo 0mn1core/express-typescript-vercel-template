@@ -18,8 +18,8 @@ jobs:
     steps:
       - name: Initial Checkout
         uses: actions/checkout@v4.1.7
-      - name: Install Typescript Compile Tools
-        run: npm install --global tsup typescript
+      - name: Install Typescript Compile And Build Tools
+        run: npm install --global tsup typescript shx
       - name: Compile Typescript
         run: npm run build
       - name: Install Vercel CLI
